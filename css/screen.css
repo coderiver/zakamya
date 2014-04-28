@@ -19,7 +19,48 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; }
+body { font-size: 12px; font-family: Tahoma, Arial, sans-serif; line-height: 1.4; }
+
+.container { width: 1183px; margin: 0 auto; }
+
+.header { height: 119px; padding-top: 10px; background: #042892 url(../img/topbg.jpg) 50% 0 no-repeat; }
+.header__inner { *zoom: 1; }
+.header__inner:after { content: " "; display: table; clear: both; }
+.header__mid { float: left; }
+.header__right { float: right; }
+
+.yourcity { *zoom: 1; position: relative; padding-left: 21px; margin-bottom: 8px; color: white; }
+.yourcity:after { content: " "; display: table; clear: both; }
+.yourcity:before { content: ""; position: absolute; top: 16px; left: 0px; background: url('../img/icons-see7df8abf8.png') 0 -18px no-repeat; width: 19px; height: 32px; }
+.yourcity__title { font-size: 13px; }
+.yourcity__select { position: relative; float: left; }
+.yourcity__text { position: relative; display: inline-block; font-size: 18px; border-bottom: 1px dotted; cursor: pointer; }
+.yourcity__text:before { content: ""; position: absolute; top: 11px; right: -15px; background: url('../img/icons-see7df8abf8.png') 0 0 no-repeat; width: 10px; height: 8px; }
+.yourcity__dropdown { position: absolute; top: 30px; left: 0; background: #eff7fa; min-width: 250px; }
+.yourcity__dropdown li a { display: inline-block; font-size: 16px; padding: 0 10px; color: #505558; text-decoration: none; }
+.yourcity__dropdown li a:hover { color: #0398fd; }
+
+.logo { float: left; margin-right: 20px; }
+.logo a { display: block; background: url('../img/icons-see7df8abf8.png') 0 -90px no-repeat; width: 268px; height: 111px; }
+
+.search { height: 60px; width: 626px; padding: 12px 13px 9px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 0; -moz-border-radius: 12px/30px 30px; -webkit-border-radius: 0.4; border-radius: 12px/30px 30px; background: url(../img/search-bg.jpg) 0 0 repeat-x; -moz-box-shadow: 0px 1px 5px #0d57a3; -webkit-box-shadow: 0px 1px 5px #0d57a3; box-shadow: 0px 1px 5px #0d57a3; }
+.search__input { height: 37px; width: 476px; margin-right: 13px; padding: 0 10px; border: 1px solid #2483f7; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; background: white; -moz-box-shadow: 0 1px 1px #6d9aeb; -webkit-box-shadow: 0 1px 1px #6d9aeb; box-shadow: 0 1px 1px #6d9aeb; font: 16px Tahoma, sans-serif; }
+.search__input:-ms-input-placeholder { font: italic 16px/16px Arial, sans-serif; color: #959b9f; }
+.search__input:-moz-placeholder { font: italic 16px/16px Arial, sans-serif; color: #959b9f; }
+.search__input::-moz-placeholder { font: italic 16px/16px Arial, sans-serif; color: #959b9f; }
+.search__input::-webkit-input-placeholder { font: italic 16px/16px Arial, sans-serif; color: #959b9f; }
+.search__input::placeholder { font: italic 16px/16px Arial, sans-serif; color: #959b9f; }
+.search__submit { position: relative; height: 37px; width: 89px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; background: #ffdf0d; background-image: -moz-linear-gradient(#fffc77, #ffc901); background-image: -webkit-linear-gradient(#fffc77, #ffc901); background-image: linear-gradient(#fffc77, #ffc901); text-align: center; color: #13232c; font-size: 18px; text-shadow: 0 1px 0 #fff351; }
+.search__submit:before { content: ""; position: absolute; bottom: 3px; left: 1px; right: 1px; height: 4px; -moz-border-radius: 0 0 8px 8px; -webkit-border-radius: 0; border-radius: 0 0 8px 8px; border-bottom: 1px solid #ffde66; -moz-box-shadow: 0 2px 3px #d89700; -webkit-box-shadow: 0 2px 3px #d89700; box-shadow: 0 2px 3px #d89700; }
+.search__submit:active { top: 2px; }
+.search__submit:active:before { display: none; }
+
+.tools { *zoom: 1; width: 250px; height: 45px; text-align: center; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; vertical-align: middle; background: rgba(3, 39, 145, 0.6); }
+.tools:after { content: " "; display: table; clear: both; }
+
+.login { position: relative; display: inline-block; vertical-align: middle; padding-left: 19px; }
+
+.register { display: inline-block; vertical-align: middle; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
