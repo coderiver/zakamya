@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	
 	// select
+    
     function select() {
         $(".js-select").each(function(){
             var select_list = $(this).find(".js-select-list");
@@ -41,6 +42,29 @@ $(document).ready(function() {
     $('.js-select').click(function(event){
         event.stopPropagation();
     });
+
+    // menu accordeon
+
+    function menu(){
+    	var menu_item = $(".submenu");
+    	var menu_drop = $(".submenu__list");
+
+    	menu_drop.hide();
+    	menu_item.on('click', function(){
+			if ($(this).find('.menu__link').hasClass('is-active')) {
+				$(this).find('.menu__link').removeClass('is-active');
+				$(this).find('.submenu__list').slideUp('fast');
+			}
+			else{
+				menu_drop.slideUp('fast');
+				menu_item.find('.menu__link').removeClass('is-active');
+				$(this).find('.menu__link').addClass('is-active');
+				$(this).find('.submenu__list').slideDown('fast');
+			};
+    	});
+    }	
+    menu();
+
 
     $(document).click(function(event){
     	$(".js-select-list").slideUp('fast');

@@ -47,9 +47,22 @@ body
 
 .container
 	width: 1183px
-	margin: 0 auto 
+	margin: 0 auto
+.wrapper
+	+clr
+	padding-top: 14px
+.content
+	overflow: hidden 	
+.out
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	margin: 0 auto -138px	 
+.push
+	height: 138px
 
 // header
+
 .header
 	height: 119px
 	padding-top: 10px
@@ -160,7 +173,9 @@ body
 .tools
 	+clr
 	width: 250px
-	height: 45px
+	height: 35px
+	margin-bottom: 13px
+	padding-top: 10px
 	text-align: center
 	+border-radius(3px)
 	vertical-align: middle
@@ -169,10 +184,278 @@ body
 	position: relative
 	display: inline-block
 	vertical-align: middle
-	padding-left: 19px 
+	margin-left: 19px
+	font-size: 14px
+	border-bottom: 1px dotted
+	text-decoration: none 
+	color: #a5c9ee
+	&:before
+		content: ""
+		position: absolute
+		top: 0px
+		left: -22px
+		+s(login)
+	&:hover
+		border-bottom: none 	
 .register
+	position: relative
 	display: inline-block
-	vertical-align: middle	
+	vertical-align: middle
+	margin-left: 51px
+	font-size: 14px
+	border-bottom: 1px dotted
+	text-decoration: none 
+	color: #a5c9ee
+	&:before
+		content: ""
+		position: absolute
+		top: 0px
+		left: -31px
+		+s(reg)
+	&:hover
+		border-bottom: none
+.feedback 
+	display: block
+	width: 250px
+	height: 43px
+	padding-top: 2px
+	+box
+	border: 1px solid rgba(250,253,21,.6)
+	+border-radius(3px)
+	+box-shadow(0 1px 5px rgba(12,87,144,.75))
+	+background-image(linear-gradient(bottom, rgba(250,253,21,.2) 0%, rgba(250,253,21,0) 100%))
+	color: #fafd15
+	font-size: 20px
+	text-align: center
+	span
+		position: relative
+		display: inline-block
+		border-bottom: 1px dotted
+		&:before
+			content: ""
+			position: absolute
+			top: 4px
+			left: -24px
+			+s(phone)
+	&:hover
+		span
+			border-bottom: none
+			
+// footer
+.footer
+	height: 125px
+	padding-top: 13px
+	background: #64a2f7
+	+g(#b1adf6, #1697f8)
+	&__inner
+		+clr
+	&__logo
+		float: left
+		margin-right: 15px
+		a
+			display: block
+			+s(logo-footer)
+	&__copyrights
+		float: left
+		padding-top: 36px
+		width: 100px
+		font-size: 12px
+		color: #fff			  					 
+	&__nav
+		float: left
+		margin-left: 33px 		   
+	&__list
+		+clr
+		padding-top: 33px
+		margin-bottom: 19px
+		li
+			float: left
+			margin-right: 23px
+			a
+				display: block
+				font-size: 13px
+				color: #fff
+				&:hover
+					text-decoration: none
+	&__feedback
+		position: relative
+		display: inline-block
+		padding: 2px 9px 4px
+		margin-left: 27px 
+		+border-radius(4px)
+		background: #fff
+		font-size: 13px
+		color: #0398fd
+		text-decoration: none
+		&:before
+			content: ""
+			position: absolute
+			top: 10px
+			left: -8px
+			+s(feedback) 
+		span
+			border-bottom: 1px dotted
+		i
+			position: absolute
+			top: -2px
+			left: -30px
+			+s(phone)
+		&:hover
+			span
+				border-bottom: none
+	&__design
+		float: right
+		font-size: 0
+		padding-top: 22px
+		span, i, a
+			display: inline-block
+			vertical-align: middle
+			font-size: 13px
+			color: #fff
+		i
+			margin: 0 5px 
+			+s(design)
+
+// sidebar
+.sidebar
+	float: left
+	width: 277px
+	margin-right: 15px
+	&__btn
+		display: block
+		height: 92px
+		padding-left: 100px
+		padding-top: 15px
+		margin-bottom: 15px
+		+border-radius(15px)
+		border: 1px solid #b7d2de
+		font-size: 18px
+		color: #0757d2
+		text-decoration: none 
+		&.subscribe
+			background: url(../img/subscribe.png) no-repeat
+		&.help
+			background: url(../img/help.png) no-repeat 	 	
+.menu
+	margin-bottom: 20px
+	background: #eff7f9
+	+box-shadow(0 2px 7px rgba(89,89,89,.4))
+	&__link
+		display: block
+		height: 31px
+		line-height: 31px
+		padding: 0 15px 
+		text-decoration: none
+		background: #fbfd6b
+		+background-image(linear-gradient(bottom, rgba(255,201,1,.5) 0%, rgba(255,252,119,.5) 100%))
+		font-size: 18px
+		color: #505558
+		&:hover
+			background: #1b9ff9
+			+g(#26ccfc, #0d66f4)
+			color: #fff
+		&.is-active
+			background: #1b9ff9
+			+g(#26ccfc, #0d66f4)
+			color: #fff	
+.submenu
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 14px
+		right: 15px
+		+arr(8, 6, #fff, b)
+	&__list
+		background: #eff7fa
+		li
+			border-top: 1px dashed #d8e0e3
+			&:first-child
+				border-top: none	 
+		a
+			display: block
+			height: 24px
+			line-height: 24px
+			padding-left: 27px
+			padding-right: 15px 
+			text-decoration: none
+			font-size: 14px
+			color: #505558
+			&:hover
+				color: #0398fd
+.advertisement
+	min-height: 118px
+	margin-bottom: 14px
+	padding-left: 82px
+	background: url(../img/map.png) 0 0 no-repeat
+	font-size: 13
+	color: #505558
+	a
+		color: #1ba0f9
+		font-weight: bold
+		text-decoration: none
+.parthners
+	padding: 17px
+	margin-bottom: 15px
+	+box-shadow(0 2px 7px rgba(89,89,89,.4))		 							
+	&__title
+		font-size: 18px
+		color: #505558
+		margin-bottom: 19px
+	&__inner	
+		overflow: auto
+		height: 295px
+	&__item
+		+clr
+		padding: 11px 0 
+		border-top: 1px solid #ebebeb
+		&:first-child
+			padding: 0 0 11px 
+			border-top: none 
+	&__logo
+		float: left
+		width: 118px
+	&__info
+		float: left
+		width: 99px
+		color: #4e5457
+		a
+			font-size: 12px
+			color: #0398fd
+			text-decoration: none
+			span
+				text-decoration: underline
+.news-preview				
+	margin-bottom: 15px
+	&__title
+		margin-bottom: 10px
+		font-size: 22px
+		color: #4e5457
+	&__item
+		margin-bottom: 10px
+	&__date 
+		font-size: 11px
+		color: #adb2b5
+	&__link
+		font-size: 14px
+		color: #0398fd
+		&:hover
+			text-decoration: none
+
+.btn
+	display: inline-block
+	height: 19px
+	line-height: 19px
+	padding: 0 7px 
+	+border-radius(3px)
+	background: #cfcfcf
+	+background-image(linear-gradient(bottom, #1397f7 0%, #b1adf5 100%))
+	text-decoration: none
+	font-size: 12px
+	color: #fff
+
+				
+						 		
 
 
 			
