@@ -1,2 +1,97 @@
 // Normally mainpage styles
- 
+.content__sidebar
+	float: right
+	width: 250px
+	margin-left: 15px
+.banner
+	display: block
+	margin-bottom: 15px
+.tabs
+	width: 623px
+	&__nav
+		overflow: hidden
+		li
+			float: left
+			margin-left: 1px
+			&:first-child
+				margin-left: 0
+			&.is-active
+				.tabs__link
+					border: 1px solid #0398fd
+					border-bottom: none
+					background: #fff
+					color: #505558  	
+	&__link
+		display: block
+		width: 155px
+		height: 38px
+		+box
+		line-height: 38px
+		+border-radius(3px 3px 0 0)
+		background: #65a2f7
+		+background-image(linear-gradient(bottom, #1397f7 0%, #b1adf5 100%))
+		text-align: center
+		text-decoration: none
+		font-size: 18px
+		color: #fff
+	&__content	
+		border: 1px solid #0398fd
+		border-top: none
+.realty
+	padding: 0 10px 7px
+	&__item
+		+clr
+		display: block
+		height: 35px
+		line-height: 35px
+		border-top: 1px dashed #cecece
+		font-size: 16px
+		color: #505558
+		&:first-child
+			border-top: none
+		&:hover
+			color: #0398fd
+			text-decoration: none		
+	&__link
+		position: relative
+		float: left
+		padding-left: 32px 
+		&.flats
+			&:before
+				content: ""
+				position: absolute 			
+				top: 7px
+				left: 0px
+				+s(flat)
+		&.cottage
+			&:before
+				content: ""
+				position: absolute
+				top: 7px
+				left: 0px
+				+s(cottage)
+		&.commerse
+			&:before
+				content: ""
+				position: absolute
+				top: 7px
+				left: 0px
+				+s(commerse-house)
+		&.garage
+			&:before
+				content: ""
+				position: absolute
+				top: 7px
+				left: 0px
+				+s(garage)
+		&.plot
+			&:before
+				content: ""
+				position: absolute
+				top: 7px
+				left: 0px
+				+s(plot)
+	&__number
+		float: right						
+
+					
