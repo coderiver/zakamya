@@ -90,6 +90,22 @@ $(document).ready(function() {
         tab();
     };
 
+    // slider initialize
+    
+    if ($(".gallery").length) {
+    	$(".js-slider").cycle({
+    	    fx: "carousel",
+    	    timeout: 0,
+    	    pager: "#adv-custom-pager",
+    	    carouselFluid: true,
+    	    allowWrap: true,
+    	    next: '.cyclenext',
+    	    prev: '.cycleprev',
+    	    pagerTemplate: "<a href=#><img src='{{src}}' width=80 height=80></a>"
+    	});
+    };
+    
+
     $(document).click(function(event){
     	$(".js-select-list").slideUp('fast');
 	});
