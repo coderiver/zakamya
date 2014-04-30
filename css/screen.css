@@ -32,6 +32,11 @@ body { font-size: 14px; font-family: Tahoma, Arial, sans-serif; line-height: 1.4
 
 .push { height: 138px; }
 
+.left-col { float: left; }
+
+.clr { *zoom: 1; }
+.clr:after { content: " "; display: table; clear: both; }
+
 .header { height: 119px; padding-top: 10px; background: #042892 url(../img/topbg.jpg) 50% 0 no-repeat; }
 .header__inner { *zoom: 1; }
 .header__inner:after { content: " "; display: table; clear: both; }
@@ -150,7 +155,8 @@ body { font-size: 14px; font-family: Tahoma, Arial, sans-serif; line-height: 1.4
 
 .content__sidebar { float: right; width: 250px; margin-left: 15px; }
 
-.banner { display: block; margin-bottom: 15px; }
+.banner { display: block; margin-top: 15px; }
+.banner:first-child { margin-top: 0; }
 
 .tabs { width: 623px; }
 .tabs__nav { overflow: hidden; }
