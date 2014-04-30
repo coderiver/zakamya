@@ -38,7 +38,7 @@
 		border: 1px solid #0398fd
 		border-top: none
 .realty
-	padding: 0 10px 7px
+	padding: 0 10px 0px
 	&__item
 		+clr
 		display: block
@@ -92,6 +92,95 @@
 				left: 0px
 				+s(plot)
 	&__number
-		float: right						
+		float: right
+		
+// list
+.list
+	padding-top: 15px
+	&__item
+		+clr
+		margin-bottom: 15px
+	&__img
+		float: left
+		margin-right: 15px
+	&__mid
+		float: left
+		width: 529px
+	&__link
+		position: relative
+		top: -10px
+		display: inline-block
+		margin-bottom: 1px
+		font-size: 18px
+		color: #505558
+		&:hover
+			text-decoration: none
+	&__adress
+		display: inline-block
+		margin-bottom: 11px
+		font-size: 14px
+		color: #0398fd
+		text-decoration: none
+		border-bottom: 1px dotted
+	&__chars
+		+clr
+		li
+			position: relative
+			float: left
+			margin-right: 20px
+			padding-left: 15px
+			&:before
+				content: ""
+				position: absolute
+				top: 6px
+				left: 0px
+				width: 5px
+				height: 5px
+				background: #ffcb02   	  			
+	&__right
+		float: right
+		padding-top: 19px
+		width: 208px
+		text-align: right
+.price
+	font-size: 20px
+	color: #ff4701
+	margin-bottom: 9px
+.square
+	position: relative
+	display: inline-block
+	padding-left: 25px 
+	font-size: 14px
+	&:before
+		content: ""
+		position: absolute
+		top: 3px
+		left: 0px
+		+s(price)
+.about
+	&__list
+		margin-bottom: 15px
+		+justify
+		li
+			width: 294px
+			height: 230px
+			+justify-child
+			+box
+			padding: 19px
+			background: #f0f8fa
+	&__item
+		text-align: center
+		font-size: 15px
+		color: #0757d2
+		font-style: italic
+		img
+			margin-bottom: 10px
+	&__article
+		font-size: 13px
+		p
+			margin-bottom: 15px
+
+					
+
 
 					
