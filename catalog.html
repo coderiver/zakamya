@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<title>catalog</title>
 	<meta name="viewport" content="initial-scale=1"/>
+	<!--[if IE]><script src="js/lib/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 </head>
 <body>
@@ -44,7 +45,7 @@
 	<!-- BEGIN content -->
 	<div class="wrapper container">
 		<!-- BEGIN sidebar -->
-		<aside class="sidebar">
+		<div class="sidebar">
 			<!-- BEGIN nav -->
 			<nav class="menu">
 				<ul>
@@ -211,17 +212,17 @@
 				<a href="#" class="btn">Все новости</a>
 			</div>
 			<!-- END sidebar__news -->
-		</aside>
+		</div>
 		<!-- END sidebar -->
 		<div class="content">
-			<div class="content__sidebar">
+			<aside class="content__sidebar">
 				<a href="#" class="banner">
 					<img src="img/banner1.jpg" alt="">
 				</a>
 				<a href="#" class="banner">
 					<img src="img/banner2.jpg" alt="">
 				</a>
-			</div>
+			</aside>
 			<div class="left-col">
 				<!-- BEGIN filters -->
 				<div class="filters">
@@ -255,7 +256,7 @@
 					        		<li data-id="2"><a href="#">Комплекс3</a></li>
 					    		</ul>
 							</div>
-							<div class="filters__name">Параметры дома</div>
+							<div class="filters__name"><span>Параметры дома</span></div>
 							<label class="checkbox">
 								<input type="checkbox">
 								<span>Только с фото</span>
