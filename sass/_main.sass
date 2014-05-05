@@ -97,11 +97,15 @@
 		float: right
 		
 // list
+.list-wrap
+	margin-bottom: 15px
 .list
 	padding-top: 15px
 	&__item
 		+clr
-		margin-bottom: 15px
+		margin-top: 15px
+		&:first-child
+			margin-top: 0
 	&__img
 		float: left
 		margin-right: 15px
@@ -120,8 +124,13 @@
 	&__right
 		float: right
 		padding-top: 19px
-		width: 208px
 		text-align: right
+	&.list_top
+		margin-top: 15px
+		padding: 15px 
+		background: #fefdd4
+		+box-shadow(0 1px 5px rgba(89,89,89,.3))
+ 	
 .sked
 	+clr
 	li
